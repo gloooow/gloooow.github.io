@@ -1,1 +1,285 @@
-<p>hello</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="name">Your Name</div>
+            <nav class="menu">
+                <label class="menu-item" for="tab-work">
+                    <input type="radio" id="tab-work" name="tabs" class="tab-radio" checked>
+                    Work
+                </label>
+                <label class="menu-item" for="tab-research">
+                    <input type="radio" id="tab-research" name="tabs" class="tab-radio">
+                    Research
+                </label>
+                <label class="menu-item" for="tab-first">
+                    <input type="radio" id="tab-first" name="tabs" class="tab-radio">
+                    FIRST
+                </label>
+                <label class="menu-item" for="tab-volunteering">
+                    <input type="radio" id="tab-volunteering" name="tabs" class="tab-radio">
+                    Volunteering
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Work Section -->
+        <section id="work" class="section active">
+            <h1>Work Experience</h1>
+            
+            <div class="job">
+                <div class="job-company">Current Company</div>
+                
+                <div class="job-position">
+                    <div class="job-header">
+                        <h3 class="job-title">Senior Developer</h3>
+                        <span class="job-date">2023 - Present</span>
+                    </div>
+                    <ul class="job-description">
+                        <li>Led development of key features</li>
+                        <li>Mentoring junior team members</li>
+                        <li>Technical architecture planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-company">Previous Company</div>
+                
+                <div class="job-position">
+                    <div class="job-header">
+                        <h3 class="job-title">Senior Developer</h3>
+                        <span class="job-date">2022 - 2023</span>
+                    </div>
+                    <ul class="job-description">
+                        <li>Led team of 5 developers</li>
+                        <li>Promoted to senior role</li>
+                    </ul>
+                </div>
+
+                <div class="job-position">
+                    <div class="job-header">
+                        <h3 class="job-title">Junior Developer</h3>
+                        <span class="job-date">2021 - 2022</span>
+                    </div>
+                    <ul class="job-description">
+                        <li>Started career as junior developer</li>
+                        <li>Built foundational skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h1>Research & Publications</h1>
+            
+            <div class="research-item">
+                <h3 class="research-title">Machine Learning Applications in Healthcare</h3>
+                <div class="research-meta">
+                    <span class="research-journal">IEEE Transactions on Medical Imaging</span>
+                    <span class="research-year">2024</span>
+                </div>
+                <p class="research-description">Study on the application of deep learning models to improve diagnostic accuracy in medical imaging with 95% precision.</p>
+            </div>
+
+            <div class="research-item">
+                <h3 class="research-title">Optimization Techniques for Distributed Systems</h3>
+                <div class="research-meta">
+                    <span class="research-journal">ACM SIGPLAN Notices</span>
+                    <span class="research-year">2023</span>
+                </div>
+                <p class="research-description">Novel approach to optimize resource allocation in cloud computing environments, reducing latency by 40%.</p>
+            </div>
+
+            <div class="research-item">
+                <h3 class="research-title">Data Privacy in Blockchain Networks</h3>
+                <div class="research-meta">
+                    <span class="research-journal">Journal of Cybersecurity</span>
+                    <span class="research-year">2023</span>
+                </div>
+                <p class="research-description">Comprehensive analysis of privacy-preserving techniques in blockchain systems with practical implementation guidelines.</p>
+            </div>
+        </section>
+
+        <!-- FIRST Section -->
+        <section id="first" class="section">
+            <h1>FIRST Romania Volunteering</h1>
+            
+            <div class="season-accordion">
+                <!-- 2025-2026 Season (Latest - Open by default) -->
+                <details class="season" open>
+                    <summary class="season-header">
+                        <span class="season-title">2025-2026 Season - FIRST® AGE™</span>
+                        <span class="season-toggle">−</span>
+                    </summary>
+                    <div class="season-content">
+                        <table class="events-table">
+                            <thead>
+                                <tr>
+                                    <th>Event #</th>
+                                    <th>Event Date</th>
+                                    <th>Program</th>
+                                    <th>Event</th>
+                                    <th>Role(s)</th>
+                                    <th>Day #</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>9/15/2025</td>
+                                    <td>FRC</td>
+                                    <td>Regional Kickoff</td>
+                                    <td>Organizer</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>10/18/2025</td>
+                                    <td>FRC</td>
+                                    <td>Competition Round 1</td>
+                                    <td>Referee, Judge</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- 2024-2025 Season -->
+                <details class="season">
+                    <summary class="season-header">
+                        <span class="season-title">2024-2025 Season - FIRST Tech Challenge</span>
+                        <span class="season-toggle">+</span>
+                    </summary>
+                    <div class="season-content">
+                        <table class="events-table">
+                            <thead>
+                                <tr>
+                                    <th>Event #</th>
+                                    <th>Event Date</th>
+                                    <th>Program</th>
+                                    <th>Event</th>
+                                    <th>Role(s)</th>
+                                    <th>Day #</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>9/20/2024</td>
+                                    <td>FTC</td>
+                                    <td>Kickoff Event</td>
+                                    <td>Volunteer</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>11/10/2024</td>
+                                    <td>FTC</td>
+                                    <td>Qualifier</td>
+                                    <td>Field Technician</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- 2023-2024 Season -->
+                <details class="season">
+                    <summary class="season-header">
+                        <span class="season-title">2023-2024 Season - FIRST Lego League</span>
+                        <span class="season-toggle">+</span>
+                    </summary>
+                    <div class="season-content">
+                        <table class="events-table">
+                            <thead>
+                                <tr>
+                                    <th>Event #</th>
+                                    <th>Event Date</th>
+                                    <th>Program</th>
+                                    <th>Event</th>
+                                    <th>Role(s)</th>
+                                    <th>Day #</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>9/12/2023</td>
+                                    <td>FLL</td>
+                                    <td>Opening Ceremony</td>
+                                    <td>Judge, Mentor</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Volunteering Section -->
+        <section id="volunteering" class="section">
+            <h1>Volunteering</h1>
+            
+            <div class="volunteer-role">
+                <div class="volunteer-organization">Tech Community Foundation</div>
+                
+                <div class="volunteer-position">
+                    <div class="volunteer-header">
+                        <h3 class="volunteer-title">Workshop Coordinator</h3>
+                        <span class="volunteer-date">2024 - Present</span>
+                    </div>
+                    <ul class="volunteer-description">
+                        <li>Organized monthly coding workshops</li>
+                        <li>Mentored beginners in web development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="volunteer-role">
+                <div class="volunteer-organization">Another Organization</div>
+                
+                <div class="volunteer-position">
+                    <div class="volunteer-header">
+                        <h3 class="volunteer-title">Volunteer Coordinator</h3>
+                        <span class="volunteer-date">2023 - 2024</span>
+                    </div>
+                    <ul class="volunteer-description">
+                        <li>Coordinated volunteer events</li>
+                        <li>Promoted to leadership role</li>
+                    </ul>
+                </div>
+
+                <div class="volunteer-position">
+                    <div class="volunteer-header">
+                        <h3 class="volunteer-title">Event Volunteer</h3>
+                        <span class="volunteer-date">2022 - 2023</span>
+                    </div>
+                    <ul class="volunteer-description">
+                        <li>Assisted with event setup and operations</li>
+                        <li>Helped coordinate with teams</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

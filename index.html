@@ -1,285 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ștefan Cula</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="name">Your Name</div>
-            <nav class="menu">
-                <label class="menu-item" for="tab-work">
-                    <input type="radio" id="tab-work" name="tabs" class="tab-radio" checked>
-                    Work
-                </label>
-                <label class="menu-item" for="tab-research">
-                    <input type="radio" id="tab-research" name="tabs" class="tab-radio">
-                    Research
-                </label>
-                <label class="menu-item" for="tab-first">
-                    <input type="radio" id="tab-first" name="tabs" class="tab-radio">
-                    FIRST
-                </label>
-                <label class="menu-item" for="tab-volunteering">
-                    <input type="radio" id="tab-volunteering" name="tabs" class="tab-radio">
-                    Volunteering
-                </label>
-            </nav>
-        </div>
+  <main class="site-shell">
+    <input class="tab-input" type="radio" name="section" id="tab-work" checked>
+    <input class="tab-input" type="radio" name="section" id="tab-research">
+    <input class="tab-input" type="radio" name="section" id="tab-first">
+    <input class="tab-input" type="radio" name="section" id="tab-volunteering">
+
+    <header class="site-header">
+      <a class="site-name" href="index.html">Ștefan Cula</a>
+      <nav class="tabs" aria-label="Main sections">
+        <label class="tab-label" for="tab-work">Work</label>
+        <label class="tab-label" for="tab-research">Research</label>
+        <label class="tab-label" for="tab-first">FIRST</label>
+        <label class="tab-label" for="tab-volunteering">Volunteering</label>
+      </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Work Section -->
-        <section id="work" class="section active">
-            <h1>Work Experience</h1>
-            
-            <div class="job">
-                <div class="job-company">Current Company</div>
-                
-                <div class="job-position">
-                    <div class="job-header">
-                        <h3 class="job-title">Senior Developer</h3>
-                        <span class="job-date">2023 - Present</span>
-                    </div>
-                    <ul class="job-description">
-                        <li>Led development of key features</li>
-                        <li>Mentoring junior team members</li>
-                        <li>Technical architecture planning</li>
-                    </ul>
-                </div>
-            </div>
+    <address class="contact-links" aria-label="Contact links">
+      <a href="mailto:stefanncula@gmail.com">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M4 6h16v12H4V6Zm2.4 2 5.6 4.2L17.6 8H6.4Zm11.6 8V9.8l-6 4.5-6-4.5V16h12Z"></path>
+        </svg>
+        <span>stefanncula@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/stefan-cula/" target="_blank" rel="noreferrer">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M5.1 8.4h3.1V19H5.1V8.4Zm1.6-4.9a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6ZM10.2 8.4h3v1.4h.1c.4-.8 1.5-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.9V19H17v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V19h-3V8.4Z"></path>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/gloooow" target="_blank" rel="noreferrer">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.5 1.1 3 .8.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2.1 1.1-2.8-.1-.3-.5-1.3.1-2.8 0 0 .9-.3 2.9 1.1a9.7 9.7 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.5.2 2.5.1 2.8.7.7 1.1 1.7 1.1 2.8 0 4-2.4 4.8-4.7 5.1.4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"></path>
+        </svg>
+        <span>GitHub</span>
+      </a>
+    </address>
 
-            <div class="job">
-                <div class="job-company">Previous Company</div>
-                
-                <div class="job-position">
-                    <div class="job-header">
-                        <h3 class="job-title">Senior Developer</h3>
-                        <span class="job-date">2022 - 2023</span>
-                    </div>
-                    <ul class="job-description">
-                        <li>Led team of 5 developers</li>
-                        <li>Promoted to senior role</li>
-                    </ul>
-                </div>
+    <!-- <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Portfolio</p>
+      <h1 id="page-title">Work, research, and robotics volunteering.</h1>
+      <p>
+        A clean place for experience, publications, FIRST seasons, and other
+        volunteering. Replace the dummy entries below with your own details.
+      </p>
+    </section> -->
 
-                <div class="job-position">
-                    <div class="job-header">
-                        <h3 class="job-title">Junior Developer</h3>
-                        <span class="job-date">2021 - 2022</span>
-                    </div>
-                    <ul class="job-description">
-                        <li>Started career as junior developer</li>
-                        <li>Built foundational skills</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <div class="panels">
+      <section class="tab-panel panel-work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="work-title">Work</h2>
+        </div>
 
-        <!-- Research Section -->
-        <section id="research" class="section">
-            <h1>Research & Publications</h1>
-            
-            <div class="research-item">
-                <h3 class="research-title">Machine Learning Applications in Healthcare</h3>
-                <div class="research-meta">
-                    <span class="research-journal">IEEE Transactions on Medical Imaging</span>
-                    <span class="research-year">2024</span>
-                </div>
-                <p class="research-description">Study on the application of deep learning models to improve diagnostic accuracy in medical imaging with 95% precision.</p>
-            </div>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Oct 2025 - Present</span>
+            <span>National University of Science and Technology Politehnica of Bucharest</span>
+          </div>
+          <h3>External Teacher Collaborator</h3>
+          <ul>
+            <li>Delivered lectures on Computer-Aided Engineering and related software tools.</li>
+            <li>Designed and graded assignments to assess student understanding.</li>
+            <li>Provided one-on-one support during office hours to enhance learning outcomes.</li>
+          </ul>
+        </article>
 
-            <div class="research-item">
-                <h3 class="research-title">Optimization Techniques for Distributed Systems</h3>
-                <div class="research-meta">
-                    <span class="research-journal">ACM SIGPLAN Notices</span>
-                    <span class="research-year">2023</span>
-                </div>
-                <p class="research-description">Novel approach to optimize resource allocation in cloud computing environments, reducing latency by 40%.</p>
-            </div>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Mar 2024 - Jul 2025</span>
+            <span>Digital Twin</span>
+          </div>
+          <h3>Specialist in the field of Computer-Aided Design</h3>
+          <ul>
+            <li>Created NX training videos to boost user proficiency with the latest featured in NX.</li>
+            <li>Hosted webinars on the latest design innovations and industry trends.</li>
+            <li>Delivered NX trainings in Electrical Routing, CAD, and Progressive Die Wizard.</li>
+            <li>Provided advanced technical support to clients across various industries</li>
+            <li>Contributed to pre-sales through technical demos and consultations</li>
+          </ul>
+        </article>
+      </section>
 
-            <div class="research-item">
-                <h3 class="research-title">Data Privacy in Blockchain Networks</h3>
-                <div class="research-meta">
-                    <span class="research-journal">Journal of Cybersecurity</span>
-                    <span class="research-year">2023</span>
-                </div>
-                <p class="research-description">Comprehensive analysis of privacy-preserving techniques in blockchain systems with practical implementation guidelines.</p>
-            </div>
-        </section>
+      <section class="tab-panel panel-research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2 id="research-title">Research</h2>
+        </div>
 
-        <!-- FIRST Section -->
-        <section id="first" class="section">
-            <h1>FIRST Romania Volunteering</h1>
-            
-            <div class="season-accordion">
-                <!-- 2025-2026 Season (Latest - Open by default) -->
-                <details class="season" open>
-                    <summary class="season-header">
-                        <span class="season-title">2025-2026 Season - FIRST® AGE™</span>
-                        <span class="season-toggle">−</span>
-                    </summary>
-                    <div class="season-content">
-                        <table class="events-table">
-                            <thead>
-                                <tr>
-                                    <th>Event #</th>
-                                    <th>Event Date</th>
-                                    <th>Program</th>
-                                    <th>Event</th>
-                                    <th>Role(s)</th>
-                                    <th>Day #</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>9/15/2025</td>
-                                    <td>FRC</td>
-                                    <td>Regional Kickoff</td>
-                                    <td>Organizer</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>10/18/2025</td>
-                                    <td>FRC</td>
-                                    <td>Competition Round 1</td>
-                                    <td>Referee, Judge</td>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </details>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Rsn - Bc.01</span>
+            <span>2024</span>
+          </div>
+          <h3>Cula Șt., Burghiu L.M., Cazacu C.C. – Designing a Robot for Distributing Advertising Materials using Additive Manufacturing</h3>
+          <p>
+            Published in Journal of Industrial Engineering and Robotics, Volume 8, Number 3, ISSN 3061-4112, ISSN-L 3061-4112, pages 7–14. <a href="https://industrialengineeringjournal.eu/pdf/vol8_2024_3/vol8_2024_3.pdf" target="_blank" rel="noreferrer">View paper</a>. Indexat în Google Scholar.
+          </p>
+        </article>
 
-                <!-- 2024-2025 Season -->
-                <details class="season">
-                    <summary class="season-header">
-                        <span class="season-title">2024-2025 Season - FIRST Tech Challenge</span>
-                        <span class="season-toggle">+</span>
-                    </summary>
-                    <div class="season-content">
-                        <table class="events-table">
-                            <thead>
-                                <tr>
-                                    <th>Event #</th>
-                                    <th>Event Date</th>
-                                    <th>Program</th>
-                                    <th>Event</th>
-                                    <th>Role(s)</th>
-                                    <th>Day #</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>9/20/2024</td>
-                                    <td>FTC</td>
-                                    <td>Kickoff Event</td>
-                                    <td>Volunteer</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>11/10/2024</td>
-                                    <td>FTC</td>
-                                    <td>Qualifier</td>
-                                    <td>Field Technician</td>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </details>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Rsn - Bc.02</span>
+            <span>2023</span>
+          </div>
+          <h3>Costea M., Cula Șt., Jiga G. – The Development of a Ball-screw Thermal Error Feedback System Based on FEM Simulations</h3>
+          <p>
+            Published in International Journal of Modeling and Optimization, Volume 13, Number 1, ISSN 2010-3697 (Online), pages 39–43. <a href="https://www.ijmo.org/vol13/IJMO-V13N1-822.pdf" target="_blank" rel="noreferrer">View paper</a>. Indexat în Google Scholar.
+          </p>
+        </article>
 
-                <!-- 2023-2024 Season -->
-                <details class="season">
-                    <summary class="season-header">
-                        <span class="season-title">2023-2024 Season - FIRST Lego League</span>
-                        <span class="season-toggle">+</span>
-                    </summary>
-                    <div class="season-content">
-                        <table class="events-table">
-                            <thead>
-                                <tr>
-                                    <th>Event #</th>
-                                    <th>Event Date</th>
-                                    <th>Program</th>
-                                    <th>Event</th>
-                                    <th>Role(s)</th>
-                                    <th>Day #</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>9/12/2023</td>
-                                    <td>FLL</td>
-                                    <td>Opening Ceremony</td>
-                                    <td>Judge, Mentor</td>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </details>
-            </div>
-        </section>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Rsn - Bc.03</span>
+            <span>2023</span>
+          </div>
+          <h3>Anastasiu A.-I., Vasiliu C.-A., Cula Șt. – Refurbishing and Modernizing a Robotic Manufacturing Cell</h3>
+          <p>
+            Published in Journal of Industrial Engineering and Robotics, Volume 7, Number 4, ISSN 3061-4112, ISSN-L 3061-4112, pages 83–87. <a href="https://industrialengineeringjournal.eu/pdf/vol7_2023_4/vol7_2023_4.pdf" target="_blank" rel="noreferrer">View paper</a>. Indexat în Google Scholar.
+          </p>
+        </article>
 
-        <!-- Volunteering Section -->
-        <section id="volunteering" class="section">
-            <h1>Volunteering</h1>
-            
-            <div class="volunteer-role">
-                <div class="volunteer-organization">Tech Community Foundation</div>
-                
-                <div class="volunteer-position">
-                    <div class="volunteer-header">
-                        <h3 class="volunteer-title">Workshop Coordinator</h3>
-                        <span class="volunteer-date">2024 - Present</span>
-                    </div>
-                    <ul class="volunteer-description">
-                        <li>Organized monthly coding workshops</li>
-                        <li>Mentored beginners in web development</li>
-                    </ul>
-                </div>
-            </div>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Rsn - Bc.04</span>
+            <span>2023</span>
+          </div>
+          <h3>Anastasiu A.-I., Cula Șt., Vasiliu C.-A., Anania F. D. – The Development of a Flexible Robotic Manufacturing Cell</h3>
+          <p>
+            Published in Conference Proceedings of the Academy of Romanian Scientists – PRODUCTICA Scientific Session, Volume 15, Number 1, ISSN 2067-9564, pages 11–17. <a href="https://aos.ro/wp-content/proceedings/PVol15Nr1Art.2.pdf" target="_blank" rel="noreferrer">View paper</a>. Indexat în Google Scholar.
+          </p>
+        </article>
 
-            <div class="volunteer-role">
-                <div class="volunteer-organization">Another Organization</div>
-                
-                <div class="volunteer-position">
-                    <div class="volunteer-header">
-                        <h3 class="volunteer-title">Volunteer Coordinator</h3>
-                        <span class="volunteer-date">2023 - 2024</span>
-                    </div>
-                    <ul class="volunteer-description">
-                        <li>Coordinated volunteer events</li>
-                        <li>Promoted to leadership role</li>
-                    </ul>
-                </div>
+        <article class="entry">
+          <div class="entry-meta">
+            <span>Rsn - Bc.05</span>
+            <span>2022</span>
+          </div>
+          <h3>Turturea P.-G., Cula Șt., Ivan A. M., Cristoiu C. – Numerical Control Machine Tool for Milling and 3D Printing</h3>
+          <p>
+            Published in Journal of Industrial Engineering and Robotics, Volume 6, Number 2, ISSN 3061-4112, ISSN-L 3061-4112, pages 152–155. <a href="https://industrialengineeringjournal.eu/pdf/vol6_2022_2/vol6_2022_2.pdf" target="_blank" rel="noreferrer">View paper</a>. Indexat în Google Scholar.
+          </p>
+        </article>
+      </section>
 
-                <div class="volunteer-position">
-                    <div class="volunteer-header">
-                        <h3 class="volunteer-title">Event Volunteer</h3>
-                        <span class="volunteer-date">2022 - 2023</span>
-                    </div>
-                    <ul class="volunteer-description">
-                        <li>Assisted with event setup and operations</li>
-                        <li>Helped coordinate with teams</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+      <section class="tab-panel panel-first" aria-labelledby="first-title">
+        <div class="section-heading">
+          <p class="eyebrow">Robotics Volunteering</p>
+          <h2 id="first-title">FIRST in Romania</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 28px; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);">
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">By Train</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">2,480 km</p>
+          </div>
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">By Car</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">1,240 km</p>
+          </div>
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">By Plane</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">2,400 km</p>
+          </div>
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">Cities Visited</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">8</p>
+          </div>
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">Countries Visited</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">2</p>
+          </div>
+          <div style="text-align: center;">
+            <p style="margin: 0 0 8px; color: var(--muted); font-size: 0.88rem; font-weight: 600; text-transform: uppercase;">Total Days</p>
+            <p style="margin: 0; color: var(--ink); font-size: 1.6rem; font-weight: 700;">84</p>
+          </div>
+        </div>
+
+        <details class="season" open>
+          <summary>
+            <span>2025-2026 Season - FIRST Tech Challenge Romania (Decode)</span>
+            <span class="summary-note">Latest season</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">24</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>01/17/2026</td>
+                  <td>FTC</td>
+                  <td>Meet Sparktech</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>01/23-25/2026</td>
+                  <td>FTC</td>
+                  <td>Key Volunteer Training</td>
+                  <td>Participant</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>01/31-02/01/2026</td>
+                  <td>FTC</td>
+                  <td>SUD Regional Tournament</td>
+                  <td>Lead FTA + LRI</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>02/07-08/2026</td>
+                  <td>FTC</td>
+                  <td>VEST Regional Tournament</td>
+                  <td>Lead FTA + LRI</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>02/21-22/2026</td>
+                  <td>FTC</td>
+                  <td>NORD Regional Tournament</td>
+                  <td>Lead FTA + LRI</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>02/28-03/01/2026</td>
+                  <td>FTC</td>
+                  <td>Centru Regional Tournament</td>
+                  <td>Lead FTA + LRI</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>03/13-15/2026</td>
+                  <td>FTC</td>
+                  <td>Romania Championship</td>
+                  <td>Lead FTA + LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>04/09/2026</td>
+                  <td>FTC</td>
+                  <td>Bootcamp to The Worlds Scrimmage</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>04/29-05/02/2026</td>
+                  <td>FTC</td>
+                  <td>FIRST Championship</td>
+                  <td>FTA Assistant</td>
+                  <td></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>06/17-20/2026</td>
+                  <td>FTC</td>
+                  <td>FIRST Premiere Event Europe</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2024-2025 Season - FIRST Tech Challenge Romania (Into The Deep)</span>
+            <span class="summary-note">Past season</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">23</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>12/15/2024</td>
+                  <td>FTC</td>
+                  <td>Deep Waters, Deeper Minds: Craiova Robotics Challenge</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>01/05/2025</td>
+                  <td>FTC</td>
+                  <td>Hansei WaveZ</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>01/11/2025</td>
+                  <td>FTC</td>
+                  <td>Beneath The Waves League Meet</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>01/17-19/2025</td>
+                  <td>FTC</td>
+                  <td>EST Regional Tournament</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>01/25/2025</td>
+                  <td>FTC</td>
+                  <td>StarBloom</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>02/01/2025</td>
+                  <td>FTC</td>
+                  <td>Meet Eastern Foxes</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>02/07-09/2025</td>
+                  <td>FTC</td>
+                  <td>SUD Regional Tournament</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>02/21-23/2025</td>
+                  <td>FTC</td>
+                  <td>VEST Regional Tournament</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>02/28-03/02/2025</td>
+                  <td>FTC</td>
+                  <td>NORD Regional Tournament</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>03/14-16/2025</td>
+                  <td>FTC</td>
+                  <td>Romania Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>07/04-06/2025</td>
+                  <td>FTC</td>
+                  <td>FIRST Premiere Event Europe</td>
+                  <td>FTA Assistant</td>
+                  <td></td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2023-2024 Season - FIRST Tech Challenge Romania (Centerstage)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">15</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>01/27-29/2024</td>
+                  <td>FTC</td>
+                  <td>Bucharest Regional Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>02/09-11/2024</td>
+                  <td>FTC</td>
+                  <td>Cluj Regional Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>02/23-25/2024</td>
+                  <td>FTC</td>
+                  <td>Arad Regional Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>03/08-10/2024</td>
+                  <td>FTC</td>
+                  <td>Iasi Regional Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>03/23-25/2024</td>
+                  <td>FTC</td>
+                  <td>Romania Championship</td>
+                  <td>Lead FTA+LRI</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2022-2023 Season - FIRST Tech Challenge Romania (Powerplay)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">9</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>02/13-15/2023</td>
+                  <td>FTC</td>
+                  <td>Regional Championship #1</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>02/17-19/2023</td>
+                  <td>FTC</td>
+                  <td>Regional Championship #2</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>03/10-12/2023</td>
+                  <td>FTC</td>
+                  <td>National Championship</td>
+                  <td>FTA</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2021-2022 Season - FIRST Tech Challenge Romania (Freight Frenzy)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">9</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>02/24-25/2022</td>
+                  <td>FTC</td>
+                  <td>Remote Timisoara Qualifying Tournament</td>
+                  <td>Remote Ref</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>03/10-11/2022</td>
+                  <td>FTC</td>
+                  <td>Remote Cluj Qualifying Tournament</td>
+                  <td>Remote Ref</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>03/24-25/2022</td>
+                  <td>FTC</td>
+                  <td>Remote Iasi Qualifying Tournament</td>
+                  <td>Remote Ref</td>
+                  <td></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>04/01-03/2022</td>
+                  <td>FTC</td>
+                  <td>Romania Championship</td>
+                  <td>Referee</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2020-2021 Season - FIRST Tech Challenge Romania (Ultimate Goal)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">0</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="6" style="text-align: center; color: var(--muted); padding: 20px 0;">Season not participated</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2019-2020 Season - FIRST Tech Challenge Romania (Skystone)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">3</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>02/21-23/2020</td>
+                  <td>FTC</td>
+                  <td>Timișoara Qualifying Tournament</td>
+                  <td>Team member</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details class="season">
+          <summary>
+            <span>2018-2019 Season - FIRST Tech Challenge Romania (Rover Ruckus)</span>
+          </summary>
+          <div class="table-wrap">
+            <div style="padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-weight: 600; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">Total Days: <span style="color: var(--ink); font-weight: 700;">6</span> <span style="color: var(--line);">|</span> Train: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Car: <span style="color: var(--orange-dark);">Calculating...</span> <span style="color: var(--line);">|</span> Plane: <span style="color: var(--orange-dark);">Calculating...</span></div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Event #</th>
+                  <th>Event Date</th>
+                  <th>Program</th>
+                  <th>Event</th>
+                  <th>Role(s)</th>
+                  <th>Travel</th>
+                  <th>Day #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>02/22-24/2019</td>
+                  <td>FTC</td>
+                  <td>Timisoara Qualifying Tournament</td>
+                  <td>Team member</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>03/22-24/2019</td>
+                  <td>FTC</td>
+                  <td>Romania Championship</td>
+                  <td>Team member</td>
+                  <td></td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="tab-panel panel-volunteering" aria-labelledby="volunteering-title">
+        <div class="section-heading">
+          <p class="eyebrow">Community</p>
+          <h2 id="volunteering-title">Volunteering</h2>
+        </div>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <span>2025 - Present</span>
+            <span>Community Organization</span>
+          </div>
+          <h3>Volunteer Mentor</h3>
+          <ul>
+            <li>Helped students prepare technical projects and presentations.</li>
+            <li>Organized workshop materials and supported event logistics.</li>
+            <li>Guided participants through problem solving and documentation.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <span>2024</span>
+            <span>Local Initiative</span>
+          </div>
+          <h3>Event Volunteer</h3>
+          <ul>
+            <li>Welcomed participants and coordinated check-in during public events.</li>
+            <li>Prepared schedules, supplies, and post-event notes for organizers.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
